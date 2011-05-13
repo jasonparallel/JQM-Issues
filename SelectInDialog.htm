@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/latest/jquery.mobile.js"></script>
+	
+  </head> 
+  <body> 
+    <div id="a" data-role="page">
+      <div data-role="content" >
+	    A Content
+		<a href="#b"  data-rel="dialog">B</a>
+	  </div>
+     
+    </div>
+    <div id="b" data-role="page">
+      <div data-role="content" >
+		<form id="reviewForm" data-ajax="false">
+	      <div data-role="fieldcontain">
+            <label for="rating">Rating:</label>
+            <select name="rating" id="rating" data-native-menu="false">
+              <option value="0" data-placeholder="true">Select a rating...</option>
+			  <option value="1">1 star</option>
+			  <option value="2">2 stars</option>
+			  <option value="3">3 stars</option>
+			  <option value="4">4 stars</option>
+			  <option value="5">5 stars</option>
+			</select>
+          </div>
+		  </form>
+      </div>
+    </div>
+  </body>
+</html>
